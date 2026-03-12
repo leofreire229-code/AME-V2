@@ -1,8 +1,14 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { LoginPage } from './features/auth/pages/LoginPage'
+import { SignupPage } from './features/auth/pages/SignupPage'
+
 export default function App() {
-    return (
-<main>
-    <h1>"ÓRION"</h1>
-    <p>Estrutura Base Inicial do Projeto</p>
-</main>
-    )
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<LoginPage />} />
+        <Route path="/cadastro" element={<SignupPage />} />
+      </Routes>
+    </BrowserRouter>
+  )
 }

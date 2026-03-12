@@ -5,17 +5,20 @@ export function LoginPage() {
     return (
         <section className={styles.page}>
         <div className={styles.backgroundGlow} />
-        <div className={styles.content}>
-        <span className={styles.brandEyebrow}>ÓRION LAB</span>
-        <h1 className={styles.title}>Estruturando ideias sobre Deus</h1>
-        <p className={styles.description}>
-        Organize, analise e desenvolva ideias com pofundidade estrutural.
-        </p>
+        <div className={styles.wrapper}>
+            <div className={styles.brandBlock}>
+                <img 
+                src="/logo-orion.png"
+                alt="ÓRION LAB"
+                className={styles.logo}
+            />
+
         </div>
+        
         <div className={styles.card}>
             <LoginForm />
         </div>
-           
+           </div>
         </section>
     )
 
